@@ -1,0 +1,9 @@
+@use './../../styles/utils/vars';
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: vars.$space-S * 1;
+}

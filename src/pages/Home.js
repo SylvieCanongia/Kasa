@@ -4,6 +4,7 @@ import Gallery from '../components/Gallery';
 const Home = () => {
   return (
     <div>
+     Coucou de la home
       <Gallery />
     </div>
   );

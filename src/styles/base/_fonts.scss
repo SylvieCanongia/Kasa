@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(./../../assets/fonts/Montserrat-Regular.ttf) format('ttf');
+  font-weight: 400;
+  /* Define how the browser behaves during download */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(./../../assets/fonts/Montserrat-Medium.ttf) format('ttf');
+  font-weight: 500;
+
+  /* Define how the browser behaves during download */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(./../../assets/fonts/Montserrat-Bold.ttf) format('ttf');
+  font-weight: 700;
+  /* Define how the browser behaves during download */
+  font-display: swap;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './style.css';
+import './style.scss';
 
 
 const Navbar = () => {
@@ -14,7 +14,6 @@ const Navbar = () => {
             </div>
           </NavLink>
         </div>
-
         <ul className='nav__container__menu'>
           <li className="homeLink">
             <NavLink exact='true' to='/'>

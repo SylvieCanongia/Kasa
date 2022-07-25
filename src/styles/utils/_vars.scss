@@ -1,0 +1,58 @@
+// To be able to use math.div
+@use "sass:math";
+
+// ====== FONT FAMILY ======
+$font-text: "Montserrat", sans-serif;
+
+// ====== COLORS ======
+
+$col-primary: hsla(0, 100%, 69%, 1);
+$col-black: hsl(0deg, 0%, 0%);
+$col-white: hsl(0, 0%, 100%);
+$body-bg: hsla(0, 0%, 100%, 1);
+$appart-card-bg: $col-primary;
+$cards-bg-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+$dropdown-list-bg: hsla(0, 0%, 97%, 1);
+
+// ====== FONT-SIZE ======
+
+$fsize-14px: 0.875rem;
+$fsize-15px: 0.9375rem;
+$fsize-16px: 1rem;
+$fsize-17px: 1.0625rem;
+$fsize-18px: 1.125rem;
+$fsize-19px: 1.1875rem;
+$fsize-20px: 1.25rem;
+$fsize-21px: 1.3125rem;
+
+// ====== FONT WEIGHT ======
+
+$fweight-regular: 400;
+$fweight-medium: 500;
+$fweight-bold: 700;
+
+// ====== SPACING ======
+
+$space-base: 8px;
+$space-XS: 16px;
+$space-S: 24px;
+$space-M: 32px;
+$space-L: 40px;
+$space-XL: 48px;
+
+// ====== SIZES (HEIGHT, WIDTH) ======
+
+$size-XXS: 8px;
+$size-XS: 16px;
+$size-S: 24px;
+$size-M: 32px;
+$size-L: 40px;
+$size-XL: 48px;
+$size-XXL: 72px;
+
+// ====== RADIUS ======
+
+$radius-cercle: 50%;
+$radius-S: 5px;
+$radius-M: 10px;
+$radius-L: 20px;
