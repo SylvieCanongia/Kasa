@@ -1,9 +1,26 @@
+@use './../../styles/utils/vars';
+
 .nav__container {
   display: flex;
   justify-content: space-between;
+
+  &__menu {
+    font-size: vars.$fsize-12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+
+    &>li:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .logo {
+    width: 145px;
+    height: 47px;
+  }
 }
 
-.nav__container__menu {
-  display: flex;
- gap: 40px;
-}
+
+

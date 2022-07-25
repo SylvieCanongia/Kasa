@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="nav__container__logo">
           <NavLink exact='true' to='/'>
             <div className="logo">
-              <img src="./assets/images/logo.png" alt="Kasa logo" />
+              <img src="./assets/images/logo.svg" alt="Kasa logo" />
             </div>
           </NavLink>
         </div>
