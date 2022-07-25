@@ -1,4 +1,4 @@
-import './hero.scss';
+import "./hero.scss";
 
 const Hero = () => {
   return (
@@ -16,7 +16,9 @@ const Hero = () => {
           alt="Chez vous, partout et ailleurs"
         />
       </picture>
-      <p className="heroText">Chez vous,<span>partout et ailleurs</span></p>
+      <p className="heroText">
+        Chez vous,<span>partout et ailleurs</span>
+      </p>
     </div>
   );
 };
