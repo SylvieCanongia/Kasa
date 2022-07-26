@@ -3,7 +3,7 @@ import './appartment.scss';
 const Appartment = (props) => {
 
   return (
-      <article className="appartment" key={props.id}>
+      <article className="appartment">
         <a href={props.cover} className="appartmentLink">
           <div className="appartmentImgWrapper">
             <img
