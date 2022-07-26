@@ -1,6 +1,5 @@
 import Routes from "../Routes";
 import Navbar from "../Navbar";
-import Home from '../../pages/Home';
 import './app.scss';
 
 function App() {
