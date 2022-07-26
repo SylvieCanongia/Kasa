@@ -1,19 +1,17 @@
 import data from "../../assets/data.json";
-import Appartment from '../Appartment';
+import Appartment from "../Appartment";
+import "./gallery.scss";
 
 const Gallery = () => {
   return (
-    <>
-    { data.map((appartment) => (
+    <div className="gallery">
+      {data.map((appartment) => (
         <>
           <Appartment {...appartment} />
         </>
-        )
-      )
-    }
-    </>
+      ))}
+    </div>
   );
-}
-
+};
 
 export default Gallery;

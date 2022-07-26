@@ -16,9 +16,9 @@ const Hero = () => {
           alt="Chez vous, partout et ailleurs"
         />
       </picture>
-      <p className="heroText">
+      <h1 className="heroText">
         Chez vous,<span>partout et ailleurs</span>
-      </p>
+      </h1>
     </div>
   );
 };

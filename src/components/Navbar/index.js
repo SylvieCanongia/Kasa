@@ -1,29 +1,28 @@
-import { NavLink } from 'react-router-dom';
-import './style.scss';
-
+import { NavLink } from "react-router-dom";
+import "./navbar.scss";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbar">
       <div className="nav__container">
         <div className="nav__container__logo">
-          <NavLink exact='true' to='/'>
+          <NavLink exact="true" to="/">
             <div className="logo">
               <img src="./assets/images/logo.svg" alt="Kasa logo" />
             </div>
           </NavLink>
         </div>
-        <ul className='nav__container__menu'>
+        <ul className="nav__container__menu">
           <li className="homeLink">
-            <NavLink exact='true' to='/'>
+            <NavLink exact="true" to="/">
               Accueil
             </NavLink>
-         </li>
-         <li className="aboutLink">
-            <NavLink exact='true' to='/about'>
+          </li>
+          <li className="aboutLink">
+            <NavLink exact="true" to="/about">
               A propos
             </NavLink>
-         </li>
+          </li>
         </ul>
       </div>
     </nav>

@@ -2,7 +2,7 @@
 
 .hero {
   position: relative;
-  background: hsla(0, 0%, 0%, .3);
+  background: vars.$overlayOnPictures;
   border-radius: vars.$radius-M;
   // for centering text
   display: grid;

@@ -1,0 +1,8 @@
+@use './../../styles/utils/vars';
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-block-start: vars.$space-S;
+  gap: vars.$space-S;
+}

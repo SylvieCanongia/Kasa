@@ -1,0 +1,29 @@
+@use './../../styles/utils/vars';
+
+.appartment {
+  position: relative;
+
+  &ImgWrapper {
+    height: 255px;
+  }
+
+  &ImgWrapper {
+    background: vars.$cards-bg-gradient;
+  }
+
+  &Img {
+    border-radius: vars.$radius-M;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: darken;
+  }
+
+  &Title {
+    position: absolute;
+    bottom: vars.$space-XS;
+    left: vars.$space-S;
+    font-size: vars.$fsize-16px;
+    color: vars.$col-white;
+    // width: 50%;
+  }
+}

@@ -1,3 +1,5 @@
+import './appartment.scss';
+
 const Appartment = (props) => {
 
   return (
