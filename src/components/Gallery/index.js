@@ -1,9 +1,19 @@
-import AppartmentCard from '../AppartmentCard';
+import data from "../../assets/data.json";
+import Appartment from '../Appartment';
 
 const Gallery = () => {
   return (
-    <AppartmentCard />
+    <>
+    { data.map((appartment) => (
+        <>
+          <Appartment {...appartment} />
+        </>
+        )
+      )
+    }
+    </>
   );
-};
+}
+
 
 export default Gallery;
