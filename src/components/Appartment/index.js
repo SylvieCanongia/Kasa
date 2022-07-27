@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import './appartment.scss';
 
 const Appartment = (props) => {
 
   return (
       <article className="appartment">
-        <a href={props.cover} className="appartmentLink">
+        <Link to={`appartment/${props.id}`} className="appartmentLink" data-id={props.id}>
           <div className="appartmentImgWrapper">
             <img
               src={props.cover}
@@ -13,7 +14,7 @@ const Appartment = (props) => {
             />
             <h1 className="appartmentTitle">{props.title}</h1>
           </div>
-        </a>
+        </Link>
       </article>
   )
 };
