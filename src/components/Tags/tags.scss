@@ -1,0 +1,19 @@
+@use './../../styles/utils/vars';
+
+.tags {
+  display: flex;
+  gap: vars.$space-base;
+  margin-block-start: vars.$space-base *-1.5;
+  
+  .tag {
+    background-color: vars.$col-primary;
+    color: vars.$col-white;
+    font-size: vars.$fsize-11px;
+    border-radius: vars.$radius-S;
+    width: auto;
+    padding-inline: vars.$space-XS;
+    height: vars.$size-tagHeight;
+    display: grid;
+    place-items: center;
+  }
+}

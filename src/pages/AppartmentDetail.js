@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 import Carousel from '../components/Carousel';
+import AppartmentHeading from '../components/AppartmentHeading';
+import Tags from '../components/Tags';
 import data from './../assets/data.json';
 
 const AppartmentDetail = () => {
@@ -15,7 +17,11 @@ const AppartmentDetail = () => {
   // console.log(appartment);
 
   return (
-    <Carousel {...appartment }/>
+    <>
+      <Carousel {...appartment }/>
+      <AppartmentHeading title={appartment.title} location={appartment.location} />
+      <Tags tags={appartment.tags} />
+    </>
   );
 };
 

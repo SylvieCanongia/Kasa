@@ -1,0 +1,13 @@
+@use './../../styles/utils/vars';
+
+.appartmentHeading {
+  .title {
+    font-size: vars.$fsize-18px;
+    font-weight: vars.$fweight-medium;
+    margin-block-start: vars.$space-base * -1.5;
+    margin-block-end: vars.$space-base;
+  }
+  .location {
+    font-size: vars.$fsize-14px;
+  }
+}
