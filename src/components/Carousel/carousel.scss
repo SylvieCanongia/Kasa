@@ -1,0 +1,49 @@
+@use './../../styles/utils/vars';
+
+.carouselContainer {
+  height: 255px;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+
+  .carousel {
+     width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .imgContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: vars.$radius-S;
+  }
+
+  .imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: vars.$radius-S;
+  }
+
+  .leftArrow, .rightArrow {
+    color: vars.$col-white;
+    font-size: vars.$fsize-20px;
+    text-shadow: 1px 1px 5px hsl(0, 0%, 60%);
+    position: absolute;
+    // Centers the arrows
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .leftArrow {
+    left: vars.$space-XS;
+  }
+
+  .rightArrow {
+    right: vars.$space-XS;
+  }
+
+}
