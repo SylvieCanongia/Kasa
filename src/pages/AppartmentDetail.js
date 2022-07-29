@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Carousel from '../components/Carousel';
 import AppartmentHeading from '../components/AppartmentHeading';
 import Tags from '../components/Tags';
+import StarRate from '../components/StarRate';
 import data from './../assets/data.json';
 
 const AppartmentDetail = () => {
@@ -21,6 +22,7 @@ const AppartmentDetail = () => {
       <Carousel {...appartment }/>
       <AppartmentHeading title={appartment.title} location={appartment.location} />
       <Tags tags={appartment.tags} />
+      <StarRate rating={appartment.rating} />
     </>
   );
 };
