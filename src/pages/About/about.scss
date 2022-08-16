@@ -1,0 +1,24 @@
+@use './../../styles/utils/vars';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-XS * 1.25;
+
+  &Hero {
+    position: relative;
+    background: vars.$overlayOnPictures;
+    border-radius: vars.$radius-M;
+
+    &Img {
+      mix-blend-mode: darken;
+      border-radius: vars.$radius-M;
+    }
+  }
+
+  &Description {
+    display: flex;
+    flex-direction: column;
+    gap: vars.$space-XS;
+  }
+}

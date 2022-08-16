@@ -1,0 +1,35 @@
+import React from 'react';
+import dataAbout from '../../assets/data-about.json';
+import Accordion from '../../components/Accordion';
+import "./about.scss";
+import HeroDesktop from './about-desktop.svg';
+import HeroMobile from './about-mobile.svg';
+
+const About = () => {
+
+  return (
+    <div className="about">
+      <div className="aboutHero">
+        <picture>
+          <source
+            type="image/svg+xml"
+            srcSet={HeroDesktop}
+            media="(min-width: 1100px)"
+          />
+          <img
+            className="aboutHeroImg"
+            src={HeroMobile}
+            alt=""
+          />
+        </picture>
+      </div>
+      <section className="aboutDescription">
+        {dataAbout.map((item, index) => (
+          <Accordion title={item.title} content={item.description} key={index}/>
+        ))}
+      </section>
+    </div>
+  );
+};
+
+export default About;
