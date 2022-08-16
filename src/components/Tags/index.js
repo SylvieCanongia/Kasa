@@ -1,7 +1,6 @@
 import './tags.scss';
 
 const Tags = (props) => {
-  console.log(props.tags)
 
   return (
     

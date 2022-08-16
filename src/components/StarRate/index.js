@@ -1,20 +1,18 @@
 import './starRate.scss';
-import Star from './star.png';
 
 const StarRate = (props) => {
-let numberOfStars = [];
-
-for (let i = 0; i < props.rating; i++) {
-  numberOfStars.push(
-    <div className="starContainer">
-      <img src={Star} alt="Star rate" />
-    </div>
-  ) 
-}
 
   return (
-    <div className='starRate'>
-        { numberOfStars }
+    <div className='starRate star-rating'>
+      {[...Array(5)].map((star, index) => {
+        index += 1;
+              
+        return (
+          <div className="starContainer" key={index} >
+            <span className = {index <= props.rating ? "starOn" : "starOff"} >&#9733;</span>
+          </div>
+        );
+      })}
     </div>
   );
 };

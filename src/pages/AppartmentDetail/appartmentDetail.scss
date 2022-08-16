@@ -1,0 +1,19 @@
+@use './../../styles/utils/vars';
+
+.appartmentDetail {
+  display: flex;
+  flex-direction: column;
+
+  .rateAndProfileBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: vars.$space-XS;
+  }
+
+  .sectionCollapses {
+    display: flex;
+    flex-direction: column;
+    gap: vars.$space-XS * 1.25;
+  }
+}

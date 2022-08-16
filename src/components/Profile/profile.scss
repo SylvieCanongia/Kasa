@@ -1,0 +1,17 @@
+@use './../../styles/utils/vars';
+
+.profile {
+  display: flex;
+  gap: vars.$space-base * 1.5;
+  align-items: center;
+  .profileName {
+    font-size: vars.$fsize-12px;
+    width: min-content;
+  }
+  .profilePicture {
+    width: vars.$size-M;
+    & img{
+      border-radius: vars.$radius-cercle;
+    }
+  }
+}

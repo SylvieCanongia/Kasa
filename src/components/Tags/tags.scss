@@ -3,7 +3,7 @@
 .tags {
   display: flex;
   gap: vars.$space-base;
-  margin-block-start: vars.$space-base *-1.5;
+  margin-block-start: vars.$space-base;
   
   .tag {
     background-color: vars.$col-primary;

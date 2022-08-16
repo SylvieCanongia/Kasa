@@ -1,0 +1,66 @@
+@use './../../styles/utils/vars';
+
+.accordion {
+
+  &-trigger {
+    isolation: isolate;
+    background: vars.$col-primary;
+    color: vars.$col-white;
+    display: block;
+    font-size: vars.$fsize-14px;
+    font-weight: vars.$fweight-medium;
+    padding: vars.$space-base vars.$space-base * 1.5;
+    text-align: left;
+    width: 100%;
+    outline: none;
+    z-index: 12;
+  }
+
+  &-trigger:hover {
+    background: vars.$col-primary-hoverFocus;
+  }
+
+  &-trigger {
+    border-radius: vars.$radius-S;
+  }
+
+  &-title {
+    color: vars.$col-white;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-icon {
+    border: solid currentcolor;
+    border: none;
+    pointer-events: none;
+    // Centers vertically
+    margin-block: auto;
+  }
+
+  &-trigger[aria-expanded="true"] .accordion-icon {
+    transform: rotate(-180deg);
+  }
+
+  &-panel {
+    padding: vars.$space-XS vars.$space-base * 1.5;
+    background: vars.$col-accordion-bg;
+    border-radius: 0 0 vars.$radius-S vars.$radius-S;
+    // to position the panel pasted to the trigger
+    margin-block-start: -3px;
+  }
+
+  &-panel ul {
+    padding-inline: 0;
+    font-size: vars.$fsize-12px;
+  }
+
+  &-panel.close {
+    display: none;
+  }
+
+  &-panel.open {
+    display: block;
+  }
+}
