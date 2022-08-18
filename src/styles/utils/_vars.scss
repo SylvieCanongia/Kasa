@@ -2,8 +2,7 @@
 @use "sass:math";
 
 // ====== FONT FAMILY ======
-$font-text: "Montserrat",
-sans-serif;
+$font-text: 'Montserrat', sans-serif;
 
 // ====== COLORS ======
 
@@ -31,6 +30,8 @@ $fsize-19px: 1.1875rem;
 $fsize-20px: 1.25rem;
 $fsize-21px: 1.3125rem;
 $fsize-24px: 1.5rem;
+$fsize-404-mobile: 6rem;
+$fsize-404-desktop: 18rem;
 
 // ====== FONT WEIGHT ======
 
@@ -46,7 +47,6 @@ $space-S: 24px;
 $space-M: 32px;
 $space-L: 40px;
 $space-XL: 48px;
-
 // ====== SIZES (HEIGHT, WIDTH) ======
 
 $size-XXS: 8px;

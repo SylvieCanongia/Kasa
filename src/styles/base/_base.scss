@@ -7,23 +7,10 @@
   border: none;
   text-decoration: none;
   color: vars.$col-primary;
-
-  // &::selection {
-  //   background: vars.;
-  // }
 }
 
 body {
   font-family: vars.$font-text;
   font-size: vars.$fsize-16px;
-  font-weight: 400; // regular
+  font-weight: vars.$fweight-regular;
 }
-
-// a {
-//   text-decoration: none;
-// }
-
-// a,
-// a:visited {
-//   color: vars. ;
-// }
