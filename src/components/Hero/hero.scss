@@ -6,6 +6,11 @@
   border-radius: vars.$radius-M;
   // for centering text
   display: grid;
+  font-family: 'Montserrat', sans-serif;
+
+  @media(min-width: 1100px) {
+    border-radius: vars.$radius-L;    
+  }
 
   &Img {
     mix-blend-mode: darken;
@@ -19,12 +24,28 @@
     // text on 2 lines with flex
     display: flex;
     flex-direction: column;
-    font-size: vars.$fsize-24px;
+    // font-size: vars.$fsize-24px;
+    font-size: clamp(1.5rem, 0.9208rem + 2.3762vw, 3rem);
     color: vars.$col-white;
     margin-inline-start: vars.$space-XS;
+    font-weight: vars.$fweight-medium;
 
     span {
       color: inherit;
+    }
+  }
+
+  @media(min-width: 750px) {
+    &Text {
+      display: initial;
+      justify-self: center;
+    }
+  }
+
+  @media(min-width: 1100px) {
+    margin-block-start: vars.$space-M;
+    &Img {
+      border-radius: vars.$radius-L;
     }
   }
 }

@@ -1,5 +1,6 @@
-import Hero from './../components/Hero';
-import Gallery from '../components/Gallery';
+import Hero from '../../components/Hero';
+import Gallery from '../../components/Gallery';
+import './home.scss';
 
 const Home = () => {
   return (

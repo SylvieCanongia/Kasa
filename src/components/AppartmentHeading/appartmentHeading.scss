@@ -2,12 +2,14 @@
 
 .appartmentHeading {
   .title {
-    font-size: vars.$fsize-18px;
+    // font-size: vars.$fsize-18px;
+    font-size: clamp(1.125rem, 0.8438rem + 1.4063vw, 2.25rem);
     font-weight: vars.$fweight-medium;
     margin-block-start: vars.$space-base;
     margin-block-end: vars.$space-base;
   }
   .location {
-    font-size: vars.$fsize-14px;
+    // font-size: vars.$fsize-14px;
+    font-size: clamp(0.875rem, 0.8125rem + 0.3125vw, 1.125rem);
   }
 }

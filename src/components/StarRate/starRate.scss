@@ -5,7 +5,8 @@
   
   .starContainer {
     height: 30px;
-    font-size: vars.$fsize-15px;
+    // font-size: vars.$fsize-15px;
+    font-size: clamp(0.9375rem, 0.8906rem + 0.2344vw, 1.125rem);
 
     .starOn {
       color: vars.$col-primary;

@@ -1,0 +1,12 @@
+@use './../../styles/utils/vars';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-S;
+
+
+  @media(min-width: 1100px) {
+    gap: vars.$size-L;
+  }
+}

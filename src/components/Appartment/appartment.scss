@@ -2,17 +2,16 @@
 
 .appartment {
   position: relative;
+  width: 100%;
 
   &ImgWrapper {
     height: 255px;
-  }
-
-  &ImgWrapper {
     background: vars.$cards-bg-gradient;
   }
 
   &Img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
     mix-blend-mode: darken;
   }
@@ -27,6 +26,13 @@
     left: vars.$space-S;
     font-size: vars.$fsize-16px;
     color: vars.$col-white;
+    font-weight: vars.$fweight-medium;
     // width: 50%;
+  }
+
+  @media (min-width: 100px) {
+    &ImgWrapper {
+      height: 340px;
+    }
   }
 }

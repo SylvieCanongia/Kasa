@@ -5,11 +5,12 @@
     display: flex;
     justify-content: space-between;
 
-    &__menu {
-      font-size: vars.$fsize-12px;
+    &__menu { 
+      font-size: clamp(0.625rem, 0.4063rem + 1.0938vw, 1.5rem);
       display: flex;
       align-items: center;
-      gap: 10px;
+      // gap: 10px;
+      gap: clamp(0.625rem, -0.4567rem + 4.8077vw, 3.75rem);
       text-transform: uppercase;
 
       &>li:hover {
@@ -20,6 +21,14 @@
     .logo {
       width: 145px;
       height: 47px;
+    }
+  }
+
+  @media(min-width: 1100px) {
+    .nav__container {
+      &__menu {
+        text-transform: capitalize;
+      }
     }
   }
 }

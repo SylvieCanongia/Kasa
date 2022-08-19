@@ -8,11 +8,12 @@
   .tag {
     background-color: vars.$col-primary;
     color: vars.$col-white;
-    font-size: vars.$fsize-11px;
+    // font-size: vars.$fsize-11px;
+    font-size: clamp(0.6875rem, 0.6406rem + 0.2344vw, 0.875rem);
     border-radius: vars.$radius-S;
     width: auto;
     padding-inline: vars.$space-XS;
-    height: vars.$size-tagHeight;
+    // height: vars.$size-tagHeight;
     display: grid;
     place-items: center;
   }

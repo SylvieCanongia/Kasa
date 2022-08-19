@@ -18,7 +18,7 @@ const Hero = () => {
         />
       </picture>
       <h1 className="heroText">
-        Chez vous,<span>partout et ailleurs</span>
+        Chez vous, <span>partout et ailleurs</span>
       </h1>
     </div>
   );
