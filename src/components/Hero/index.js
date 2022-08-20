@@ -1,6 +1,6 @@
 import "./hero.scss";
-import HeroLogoDesktop from './hero-desktop.svg';
-import HeroLogoMobile from './hero-mobile.svg';
+import HeroLogoDesktop from './hero-desktop.jpg';
+import HeroLogoMobile from './hero-mobile.jpg';
 
 const Hero = () => {
   return (

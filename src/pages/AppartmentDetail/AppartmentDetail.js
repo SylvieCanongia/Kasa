@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Carousel from '../../components/Carousel';
 import AppartmentHeading from '../../components/AppartmentHeading';
 import Tags from '../../components/Tags';
@@ -18,22 +18,29 @@ const AppartmentDetail = () => {
     return appartmentData;
   }
   const appartment = getAppartment(id);
+  console.log(appartment)
 
   return (
     <>
-      <section className="appartmentDetail">
-        <Carousel {...appartment} />
-        <AppartmentHeading title={appartment.title} location={appartment.location} />
-        <Tags tags={appartment.tags} />
-        <div className='rateAndProfileBlock'>
-          <StarRate rating={appartment.rating} />
-          <Profile profileName={appartment.host.name} profilePicture={appartment.host.picture} />
-        </div>
-        <section className='sectionCollapses'>
-          <Accordion title="Description" content={appartment.description} />
-          <Accordion title="Équipements" content={appartment.equipments} />
+      { appartment !== undefined &&
+        <section className="appartmentDetail">
+          <Carousel {...appartment} />
+          <AppartmentHeading title={appartment.title} location={appartment.location} />
+          <Tags tags={appartment.tags} />
+          <div className='rateAndProfileBlock'>
+            <StarRate rating={appartment.rating} />
+            <Profile profileName={appartment.host.name} profilePicture={appartment.host.picture} />
+          </div>
+          <section className='sectionCollapses'>
+            <Accordion title="Description" content={appartment.description} />
+            <Accordion title="Équipements" content={appartment.equipments} />
+          </section>
         </section>
-      </section>
+      }
+
+      { appartment === undefined &&
+        <Navigate to="/error" replace={true} />
+      }
     </>
   );
 };

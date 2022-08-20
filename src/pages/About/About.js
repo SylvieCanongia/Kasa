@@ -2,8 +2,8 @@ import React from 'react';
 import dataAbout from '../../assets/data-about.json';
 import Accordion from '../../components/Accordion';
 import "./about.scss";
-import HeroDesktop from './about-desktop.svg';
-import HeroMobile from './about-mobile.svg';
+import HeroDesktop from './about-desktop.jpg';
+import HeroMobile from './about-mobile.jpg';
 
 const About = () => {
 

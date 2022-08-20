@@ -15,6 +15,7 @@
   &Img {
     mix-blend-mode: darken;
     border-radius: vars.$radius-M;
+    width: 100%;
   }
 
   &Text {
