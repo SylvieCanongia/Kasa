@@ -12,8 +12,32 @@
   }
 
   .sectionCollapses {
+    display: grid;
+    // gap: vars.$space-XS * 1.25;
+    gap: clamp(1.25rem, 0.0385rem + 5.3846vw, 4.75rem);
+  }
+
+  @media(min-width: 750px) {
+  .appartmentDetailContainer {
     display: flex;
-    flex-direction: column;
-    gap: vars.$space-XS * 1.25;
+    justify-content: space-between;
+    margin-block-end: vars.$space-XS;
+
+    .titleAndTagsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  .rateAndProfileBlock {
+    flex-direction: column-reverse;
+    gap: 12px;
+    align-items: flex-end;
+    margin-block-end: initial;
+  }
+
+    .sectionCollapses {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }

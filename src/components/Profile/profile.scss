@@ -7,11 +7,22 @@
   .profileName {
     font-size: vars.$fsize-12px;
     width: min-content;
+    font-weight: vars.$fweight-medium;
   }
   .profilePicture {
     width: vars.$size-M;
     & img{
       border-radius: vars.$radius-cercle;
     }
+  }
+
+  @media (min-width: 750px) {
+    .profileName {
+      font-size: vars.$fsize-18px;
+    }
+
+    .profilePicture {
+      width: vars.$size-M * 1.7;
+      }
   }
 }
