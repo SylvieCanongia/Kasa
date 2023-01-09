@@ -48,6 +48,17 @@
 
   @media (min-width: 1100px) {
     height: 415px;
+
+    .pictureCount {
+      color: vars.$col-white;
+      font-size: vars.$fsize-20px;
+      text-shadow: 1px 1px 5px hsl(0, 0%, 60%);
+      position: absolute;
+      bottom: 20px;
+      //  Centers the image count
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 
 }

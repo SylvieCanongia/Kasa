@@ -26,6 +26,7 @@ const Carousel = (appartment) => {
         <>
           <div className="leftArrow" onClick={goToPrevious}>❮</div>
           <div className="rightArrow" onClick={goToNext}>❯</div>
+          <div className="pictureCount">{currentIndex + 1}/{slidesLength}</div>
         </>
      }
         {/* <!-- slide 1 --> */}
