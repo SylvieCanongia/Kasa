@@ -1,10 +1,7 @@
 @use './../../styles/utils/vars';
-@use './../../styles/utils/breakpoints';
 
 .gallery {
   display: grid;
-  // grid-template-columns: 1fr;
-  // padding-block-start: vars.$space-S;
   gap: vars.$space-S;
 
   grid-template-columns:

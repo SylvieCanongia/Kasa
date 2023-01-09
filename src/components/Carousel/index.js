@@ -3,7 +3,6 @@ import "./carousel.scss";
 
 const Carousel = (appartment) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // console.log(appartment)
   const isFirstSlide = currentIndex === 0;
   const slidesLength = appartment.pictures.length;
   const isLastSlide = currentIndex === slidesLength - 1;
