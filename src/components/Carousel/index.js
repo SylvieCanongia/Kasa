@@ -22,8 +22,12 @@ const Carousel = (appartment) => {
   return (
     <div className="carouselContainer">
      <div className="carousel">
-      <div className="leftArrow" onClick={goToPrevious}>❮</div>
-      <div className="rightArrow" onClick={goToNext}>❯</div>
+     { slidesLength > 1 &&
+        <>
+          <div className="leftArrow" onClick={goToPrevious}>❮</div>
+          <div className="rightArrow" onClick={goToNext}>❯</div>
+        </>
+     }
         {/* <!-- slide 1 --> */}
         <div className="imgContainer visible">
           <img

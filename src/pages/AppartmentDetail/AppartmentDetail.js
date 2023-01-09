@@ -25,8 +25,6 @@ const AppartmentDetail = () => {
         <section className="appartmentDetail">
           <Carousel {...appartment} />
 
-
-
           <div className='appartmentDetailContainer'>
             <div className='titleAndTagsContainer'>
               <AppartmentHeading title={appartment.title} location={appartment.location} />
@@ -37,8 +35,6 @@ const AppartmentDetail = () => {
               <Profile profileName={appartment.host.name} profilePicture={appartment.host.picture} />
             </div>
           </div>
-
-
 
           <section className='sectionCollapses'>
             <Accordion title="Description" content={appartment.description} />
