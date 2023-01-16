@@ -9,10 +9,10 @@ const Appartment = (props) => {
           <div className="appartmentImgWrapper">
             <img
               src={props.cover}
-              alt="alt text"
+              alt="Appartement"
               className="appartmentImg"
             />
-            <h1 className="appartmentTitle">{props.title}</h1>
+            <h2 className="appartmentTitle">{props.title}</h2>
           </div>
         </Link>
       </article>

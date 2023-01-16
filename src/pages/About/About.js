@@ -1,6 +1,6 @@
 import React from 'react';
 import dataAbout from '../../assets/data-about.json';
-import Accordion from '../../components/Accordion';
+import Collapse from '../../components/Collapse';
 import "./about.scss";
 import HeroDesktop from './about-desktop.jpg';
 import HeroMobile from './about-mobile.jpg';
@@ -25,7 +25,7 @@ const About = () => {
       </div>
       <section className="aboutDescription">
         {dataAbout.map((item, index) => (
-          <Accordion title={item.title} content={item.description} key={index}/>
+          <Collapse title={item.title} content={item.description} key={index}/>
         ))}
       </section>
     </div>

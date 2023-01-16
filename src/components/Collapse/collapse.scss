@@ -1,6 +1,6 @@
 @use './../../styles/utils/vars';
 
-.accordion {
+.collapse {
 
   &-trigger {
     isolation: isolate;
@@ -39,13 +39,13 @@
     margin-block: auto;
   }
 
-  &-trigger[aria-expanded="true"] .accordion-icon {
+  &-trigger[aria-expanded="true"] .collapse-icon {
     transform: rotate(-180deg);
   }
 
   &-panel {
     padding: vars.$space-XS vars.$space-base * 1.5;
-    background: vars.$col-accordion-bg;
+    background: vars.$col-collapse-bg;
     border-radius: 0 0 vars.$radius-S vars.$radius-S;
     // to position the panel pasted to the trigger
     margin-block-start: -3px;

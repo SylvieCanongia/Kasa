@@ -8,7 +8,7 @@ const Profile = (props) => {
         {props.profileName}
       </h2>
       <div className="profilePicture">
-      <img src={props.profilePicture} alt="" />
+      <img src={props.profilePicture} alt="Profil" />
       </div>
     </div>
   );

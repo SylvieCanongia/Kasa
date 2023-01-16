@@ -1,13 +1,13 @@
 import React from 'react';
 import { useParams, Navigate } from "react-router-dom";
-import Carousel from '../../components/Carousel';
+import Gallery from '../../components/Gallery';
 import AppartmentHeading from '../../components/AppartmentHeading';
 import Tags from '../../components/Tags';
 import StarRate from '../../components/StarRate';
 import Profile from '../../components/Profile';
 import data from '../../assets/data.json';
 import './appartmentDetail.scss';
-import Accordion from '../../components/Accordion';
+import Collapse from '../../components/Collapse';
 
 const AppartmentDetail = () => {
   // match to the :id specified into the route /appartment/:id
@@ -23,7 +23,7 @@ const AppartmentDetail = () => {
     <>
       { appartment !== undefined &&
         <section className="appartmentDetail">
-          <Carousel {...appartment} />
+          <Gallery {...appartment} />
 
           <div className='appartmentDetailContainer'>
             <div className='titleAndTagsContainer'>
@@ -37,8 +37,8 @@ const AppartmentDetail = () => {
           </div>
 
           <section className='sectionCollapses'>
-            <Accordion title="Description" content={appartment.description} />
-            <Accordion title="Équipements" content={appartment.equipments} />
+            <Collapse title="Description" content={appartment.description} />
+            <Collapse title="Équipements" content={appartment.equipments} />
           </section>
         </section>
       }

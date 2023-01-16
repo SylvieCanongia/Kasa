@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./accordion.scss";
+import "./collapse.scss";
 import Arrow from "./arrow.svg";
 
-const Accordion = (props) => {
+const Collapse = (props) => {
   const [expanded, setExpanded] = useState(false);
   const [open, setOpen] = useState("close");
   const toggle = () => {
@@ -11,26 +11,26 @@ const Accordion = (props) => {
   };
 
   return (
-    <div id="accordionGroup" className="accordion">
-      {/* h3 element serves as an accordion header.
-      accordion header element contains a button
+    <div id="collapseGroup" className="collapse">
+      {/* h3 element serves as an collapse header.
+      collapse header element contains a button
       that controls the visibility of its content panel. */}
       <h3>
         <button
           type="button"
-          // on a button element, set to true when the Accordion panel
+          // on a button element, set to true when the collapse panel
           // is expanded, otherwise set to false.
           aria-expanded={expanded}
-          className="accordion-trigger"
+          className="collapse-trigger"
           // aria-controls="ID" : points to the ID of the panel which the header controls.
           aria-controls="sect1"
-          id="accordion1id"
+          id="collapse1id"
           onClick={toggle}
         >
-          <span className="accordion-title">
+          <span className="collapse-title">
             {props.title}
-            <span className="accordion-icon ">
-              <img src={Arrow} alt="Arrow to open and close accordion" />
+            <span className="collapse-icon ">
+              <img src={Arrow} alt="Flèche pour afficher ou cacher la description" />
             </span>
           </span>
         </button>
@@ -38,15 +38,15 @@ const Accordion = (props) => {
       <div
         id="sect1"
         // role="region" creates a landmark region that contains
-        // the currently expanded accordion panel.
+        // the currently expanded collapse panel.
         role="region"
         // - aria-labelledby="IDREF : defines the accessible name for the region element
-        // - References the accordion header button that expands
+        // - References the collapse header button that expands
         // and collapses the region.
         // - region element is required to have an accessible name
         // to be identified as a landmark.
-        aria-labelledby="accordion1id"
-        className={`accordion-panel ${open}`}
+        aria-labelledby="collapse1id"
+        className={`collapse-panel ${open}`}
       >
         <ul className="content">
           {/* looks if props.content is array => map on it else display description */}
@@ -65,4 +65,4 @@ const Accordion = (props) => {
   );
 };
 
-export default Accordion;
+export default Collapse;
